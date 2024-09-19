@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct PublicadaSignInApp: App {
+struct PublicadaApp: App {
+    @StateObject var loginController: LoginController = LoginController()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-        }
+        }.environmentObject(loginController)
     }
 }

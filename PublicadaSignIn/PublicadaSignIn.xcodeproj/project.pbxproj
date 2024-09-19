@@ -11,6 +11,9 @@
 		BF0C3C3E2C9CA4F6002E135F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C3C3D2C9CA4F6002E135F /* ContentView.swift */; };
 		BF0C3C402C9CA4F8002E135F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0C3C3F2C9CA4F8002E135F /* Assets.xcassets */; };
 		BF0C3C432C9CA4F8002E135F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0C3C422C9CA4F8002E135F /* Preview Assets.xcassets */; };
+		BF0C3C4B2C9CA5DD002E135F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C3C4A2C9CA5DD002E135F /* LoginView.swift */; };
+		BF0C3C4D2C9CA613002E135F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C3C4C2C9CA613002E135F /* HomeView.swift */; };
+		BF0C3C4F2C9CA631002E135F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C3C4E2C9CA631002E135F /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		BF0C3C3D2C9CA4F6002E135F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BF0C3C3F2C9CA4F8002E135F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF0C3C422C9CA4F8002E135F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF0C3C4A2C9CA5DD002E135F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BF0C3C4C2C9CA613002E135F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BF0C3C4E2C9CA631002E135F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		BF0C3C502C9CA692002E135F /* PublicadaSignIn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PublicadaSignIn.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,10 @@
 		BF0C3C3A2C9CA4F6002E135F /* PublicadaSignIn */ = {
 			isa = PBXGroup;
 			children = (
+				BF0C3C502C9CA692002E135F /* PublicadaSignIn.entitlements */,
 				BF0C3C3B2C9CA4F6002E135F /* PublicadaSignInApp.swift */,
 				BF0C3C3D2C9CA4F6002E135F /* ContentView.swift */,
+				BF0C3C492C9CA5C8002E135F /* App */,
 				BF0C3C3F2C9CA4F8002E135F /* Assets.xcassets */,
 				BF0C3C412C9CA4F8002E135F /* Preview Content */,
 			);
@@ -65,6 +74,16 @@
 				BF0C3C422C9CA4F8002E135F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF0C3C492C9CA5C8002E135F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BF0C3C4A2C9CA5DD002E135F /* LoginView.swift */,
+				BF0C3C4C2C9CA613002E135F /* HomeView.swift */,
+				BF0C3C4E2C9CA631002E135F /* LoginController.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0C3C4B2C9CA5DD002E135F /* LoginView.swift in Sources */,
+				BF0C3C4D2C9CA613002E135F /* HomeView.swift in Sources */,
 				BF0C3C3E2C9CA4F6002E135F /* ContentView.swift in Sources */,
 				BF0C3C3C2C9CA4F6002E135F /* PublicadaSignInApp.swift in Sources */,
+				BF0C3C4F2C9CA631002E135F /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PublicadaSignIn/PublicadaSignIn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PublicadaSignIn/Preview Content\"";
@@ -298,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PublicadaSignIn/PublicadaSignIn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PublicadaSignIn/Preview Content\"";
